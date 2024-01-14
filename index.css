@@ -211,6 +211,25 @@ main {
   font-weight: 600;
 }
 
+footer{
+  text-align: center;
+  line-height: 30px;
+  background-color: black;
+  color: white;
+  padding: 100px;
+}
+
+.icons {
+  margin-top: 10px;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+}
+
+.icons i {
+  scale: 1.5;
+}
+
 /* responsive layout code 👍*/
 
 @media screen and (max-width: 576px) {
@@ -316,7 +335,7 @@ main {
     font-size: 1.5rem;
   }
 
-  .featured-content button{
+  .featured-content button {
     margin: 0 auto;
   }
 }
@@ -413,12 +432,12 @@ main {
 
   /* featured in medium view */
 
-  .featured-section{
+  .featured-section {
     margin-top: 50px;
     flex-direction: column-reverse;
   }
 
-  .featured-section img{
+  .featured-section img {
     width: 100%;
   }
 }
