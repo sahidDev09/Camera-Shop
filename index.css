@@ -58,6 +58,7 @@ main {
 .hero-section {
   margin-top: 100px;
   display: flex;
+  margin-bottom: 60px;
   justify-content: space-between;
   align-items: center;
 }
@@ -102,9 +103,85 @@ main {
   width: 100%;
 }
 
-/* responsive layout code */
+/* sponsor code */
+
+.sponsor-co {
+  padding: 30px;
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sponsor-hr {
+  border-width: 0.8px;
+  border-color: rgba(255, 255, 255, 0.348);
+}
+
+/* code for styling card box */
+
+.text-popular {
+  margin-top: -50px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.card-box {
+  border-radius: 10px;
+  padding: 20px;
+  line-height: 30px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card-img img {
+  width: 100%;
+}
+
+.card-content h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.card-content h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--btn-primary);
+}
+
+.card-content p {
+  font-size: 14px;
+  width: 60%;
+}
+
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+#main-cards {
+  position: relative;
+}
+
+.btn-seemore {
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--btn-primary);
+  margin: 20px 0;
+  border: none;
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+}
+
+/* responsive layout code 👍*/
 
 @media screen and (max-width: 576px) {
+  /* 📱 responsive */
   header {
     padding: 10px 15px;
   }
@@ -148,9 +225,44 @@ main {
   .hero-content button {
     margin: 0 auto;
   }
+
+  /* sponsor company mobile version*/
+
+  .sponsor-co {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sponsor-co img {
+    width: 70px;
+    padding: 5px;
+  }
+
+  .sponsor-hr {
+    display: none;
+  }
+
+  /* card section mobile view */
+
+  main {
+    padding: 20px 20px;
+  }
+
+  .text-popular {
+    margin-top: 20px;
+  }
+
+  .cards-section {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
+  /* tablet responsive */
+
   header {
     padding: 20px 30px;
   }
@@ -182,5 +294,59 @@ main {
 
   .hero-img img {
     width: 100%;
+  }
+
+  /* sponsor logos */
+
+  .sponsor-co {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  .sponsor-co img {
+    width: 70px;
+    padding: 5px;
+  }
+
+  /* card medium view  */
+
+  main {
+    padding: 20px 20px;
+  }
+
+  .text-popular {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 600;
+  }
+
+  .card-box {
+    line-height: normal;
+  }
+
+  .card-content h1 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .card-content h3 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--btn-primary);
+  }
+
+  .card-content p {
+    font-size: 12px;
+    width: 60%;
+  }
+
+  .cards-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
   }
 }
