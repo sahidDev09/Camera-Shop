@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+/* colour var */
+
+:root {
+  --primary-text-color: #3a3a3a;
+  --gray: #787885;
+  --btn-primary: #e02c6d;
+}
+
+header,
+main {
+  padding: 70px 120px;
+}
+
+/* code for styling navigation bar */
+.nav-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-menu ul > li {
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* code for styling hero section */
+
+.hero-section {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content {
+  width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: var(--primary-text-color);
+}
+
+.hero-content p {
+  font-size: 1rem;
+  margin: 20px 0;
+  color: var(--primary-text-color);
+}
+
+.hero-content button {
+  padding: 15px 24px;
+  border-radius: 50px;
+  border: 0;
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: var(--btn-primary);
+}
+
+.hero-img {
+  padding: 30px;
+  background-image: url("./images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+/* responsive layout code */
+
+@media screen and (max-width: 576px) {
+  header {
+    padding: 10px 15px;
+  }
+
+  /* nav mobile */
+
+  .nav-menu ul {
+    display: none;
+  }
+
+  .nav-brand h1 {
+    font-size: 1.2rem;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .src {
+    display: none;
+  }
+
+  /* hero mobile */
+
+  .hero-section {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 40px;
+  }
+
+  .hero-content {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-content button {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
+    padding: 20px 30px;
+  }
+
+  /* nav medium */
+
+  .nav-brand h1 {
+    font-size: 1.2rem;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu ul {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-img {
+    width: 50%;
+    background-image: url("./images/Circle\ design.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .hero-img img {
+    width: 100%;
+  }
+}
